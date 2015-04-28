@@ -1,0 +1,21 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Example</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.17/require.js"></script>
+    <script>
+        require([
+            './dist/utility'
+        ], function(utility) {
+
+            var list = [1,2,3,4];
+            utility.each(list, function(number) {
+                console.log(number);
+            });
+
+        });
+    </script>
+</body>
+</html>
